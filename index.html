@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- aca vinculamos el css -->
+     <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <div>
+        <p>Esto es un parrafo dentro del div</p>
+        <span>Span dentro de un div</span>
+    </div>
+
+    <h1 class="titulos">mi primer sitio web en codigo</h1>   
+    <p>esto es un parrafo de ejemplo</p> 
+
+    <a href=""></a>
+    <img src="" alt="">
+
+    <!-- esto es un comentario para el html -->
+    <!-- para comentar tambien podemos escribir lo que queramos, seleccionarlo y tocar command + k + c -->
+    
+    <ol> 
+        <li>primer item</li>
+        <li>segundo item</li>
+        <li>tercer item</li>
+    </ol>
+   
+    <ul>
+        <li>items que no necesitan un orden</li>
+    </ul>
+
+   <!-- con la "a" insertamos un enlace absoluto: nos dirige hacia algo externo: abajo un ejemplo -->
+    <a href="https://google.com">Ir hacia google</a>  
+    
+    <!-- enlaces relativos: para movernos entre paginas de nuestro proyecto -->
+     <a href="index2.html">Ir hacia index2</a>
+
+    <!-- enlace interno: para llevar a una seccion especifica de la misma pagina: se debe crear un id con el signo # seguido del nombre de la seccion -->
+      <a href="#testimonios">Testimonios</a>
+
+    <!-- creamos una seccion para nuestros testimonios -->
+      <section id="testimonios">
+        <p>Mis testimonios</p>
+      </section>
+    
+    <!-- para insertar videos: se debe agregar el controls para visualiuzarlo en la pagina -->
+     <video src="video.mp4" controls></video>
+
+    <!-- para insertar audios -->
+     <audio src="audio.mp3" controls></audio>
+
+    <!-- tablas | para organizarnos o mandar emails -->
+     <table>
+        <tr>   <!--definen filas-->
+            <th> <!--los encabezados de la tabla-->
+
+            </th>
+
+            <td> <!--las celdas de la tabla-->
+
+            </td>
+        </tr>
+     </table>
+
+    <table>
+        <tr>
+            <th>nombre</th>
+            <th>ciudad</th>
+            <th>edad</th>
+
+            <td>guido</td>
+            <td>adrogue</td>
+            <td>23</td>
+        </tr>
+     </table>
+
+     <!-- formularios -->
+        <form action="/submit" method="post">
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"> <!--cada label tiene un input, textarea, etc-->
+
+            <label for="password">Constraseña</label>
+            <input type="password" name="password" id="password">
+
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="hombre" id="hombre">
+
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="mujer" id="mujer">
+
+            <label for="suscribe">Suscribirse</label>
+            <input type="checkbox" name="suscribe" id="suscribe">
+
+            <label for="pais">País:</label>
+            <select name="" id="">
+                <option value="">Argentina</option>
+                <option value="">Brasil</option>
+            </select>
+
+            <!--para enviar el formulario a la url especificada en el action-->
+            <input type="submit" value="Enviar">
+
+         </form>
+
+    <!-- box model -->
+     <div class="caja">Contenido de la caja</div>
+
+
+     <!-- display y position -->
+      <h1>Demostración de CSS: display y position</h1>
+
+    <h2>Propiedad display</h2>
+    <div class="example-container">
+        <div class="example-title">display: block</div>
+        <div class="block-example">Este es un elemento de bloque</div>
+    </div>
+
+    <div class="example-container">
+        <div class="example-title">display: inline</div>
+        <span class="inline-example">Elemento en línea 1</span>
+        <span class="inline-example">Elemento en línea 2</span>
+    </div>
+
+    <div class="example-container">
+        <div class="example-title">display: inline-block</div>
+        <div class="inline-block-example">Elemento 1</div>
+        <div class="inline-block-example">Elemento 2</div>
+    </div>
+
+    <h2>Propiedad position</h2>
+    <div class="example-container">
+        <div class="example-title">position: relative</div>
+        <div class="relative-example">Elemento relativo</div>
+    </div>
+
+    <div class="example-container">
+        <div class="example-title">position: absolute</div>
+        <div class="absolute-container">
+            <div class="absolute-example">Elemento absoluto</div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example-title">position: fixed</div>
+        <div class="fixed-example">Elemento fijo</div>
+    </div>
+
+    <div class="example-container sticky-container">
+        <div class="example-title">position: sticky</div>
+        <div class="sticky-example">Elemento sticky</div>
+        <p>Desplázate hacia abajo para ver cómo el elemento sticky se comporta.</p>
+    </div>
+
+
+    <!-- flexbox -->
+     <div class="contenedor">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+     </div>
+
+
+     <!-- grids -->
+
+     <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+     </div>
+
+
+    
+
+
+</body>
+</html>

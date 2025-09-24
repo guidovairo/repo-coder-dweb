@@ -1,0 +1,374 @@
+/* Reset de css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* asi comentamos en css */
+
+/* selector + propiedad + valor de la siguiente manera */
+
+/* selector{
+
+propiedad: valor
+} 
+
+*/
+
+p{
+    color: blue;
+    font-size: 16px;
+    margin: 20px;
+
+}
+
+h1{
+    color: red;
+    text-align: center;
+
+}
+
+body{
+    background-color: aquamarine;
+}
+
+div{
+    color: green;
+}
+
+div span{
+    color: brown;
+}
+
+
+/* clases */
+.titulos {
+    text-decoration: underline;
+}
+
+/* id's */
+#testimonios{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.titulo-servicios{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 24px; 
+    /* px : medida absoluta */
+}
+
+.parrafo-servicios{
+    color: grey;
+    font-style: italic;
+    font-size: 1.5em;
+      /* em/rem : medida relativa al tamaño de fuente del elemento padre (em) o del elemento raiz (rem)*/
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    /* la linkeamos desde google fonts */
+}
+
+
+/* box model */
+.caja{
+    width: 50%;
+    height: 50vh;      
+    /* nuevas unidades de medida, %, vh */
+    background-color: lightblue;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 40px;
+    margin: 10px;
+}
+
+/* La propiedad display en CSS es crucial para controlar la disposición y el flujo de los elementos HTML en una página web. */
+/* display y position */
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .example-container {
+            margin-bottom: 40px;
+        }
+
+        .example-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Ejemplos de display */
+        .block-example {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #d9f0fc;
+            border: 1px solid #00aaff;
+        }
+
+        .inline-example {
+            display: inline;
+            color: #ff5733;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .inline-block-example {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: #c5e1a5;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+            border: 1px solid #7cb342;
+        }
+
+        /* Ejemplos de position */
+        .relative-example {
+            position: relative;
+            top: 20px;
+            left: 10px;
+            background-color: #ffcc80;
+            padding: 10px;
+        }
+
+        .absolute-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .absolute-example {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: #ff8a80;
+            padding: 10px;
+        }
+
+        .fixed-example {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #b39ddb;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .sticky-container {
+            height: 1000px;
+            background-color: #fff9c4;
+            padding: 10px;
+        }
+
+        .sticky-example {
+            position: sticky;
+            top: 10px;
+            background-color: #ffc107;
+            padding: 10px;
+        }
+
+
+    /* activamos flexbox con la propiedad display:flex */
+        .contenedor{
+            display: flex;
+            justify-content: center; /* horizontal */
+            flex-direction: row; /* despues de activar flexbox elegimos la posicion */
+            padding: 10px;
+        }
+
+    /* La propiedad flex-wrap especifica si los elementos flexibles deben ajustarse en una sola línea o pueden envolverse en múltiples líneas. */
+    /* con la propiedad flex-flow ponemos los valores de direction y wrap en una sola propiedad */
+    /* La propiedad justify-content alinea los elementos flexibles a lo largo del eje principal del contenedor */
+    /* La propiedad align-items alinea los elementos flexibles a lo largo del eje transversal (perpendicular al eje principal) del contenedor. */
+    /* La propiedad align-content alinea las líneas del contenedor flexible cuando hay espacio extra en el eje transversal. */
+    /* flex grow permite cambiar el ancho de las cajas de manera flexible */
+    /* La propiedad order determina el orden en que se muestran los ítems flexibles dentro del contenedor flex */
+    /* La propiedad flex-grow define la capacidad de un ítem flexible para crecer en proporción a los demás ítems flexibles dentro del mismo contenedor */
+    /* La propiedad flex-shrink determina la capacidad de un ítem flexible para reducir su tamaño si es necesario */
+    /* La propiedad flex-basis define el tamaño inicial de un ítem flexible antes de que se distribuya el espacio restante. */
+
+
+    /* estilos para el index2 */
+    .index2-conteiner{
+        display: flex;
+    }
+
+    .sidebar{
+        width: 25%;
+        background-color: #ff5733;
+        padding: 20px;
+    }
+
+    .maincontent{
+        width: 75%;
+        background-color: #ffcc80;
+        padding: 20px;
+    }
+
+
+/* GRIDS */
+/* propiedades que se pueden usar:
+display: grid (convierte un elemento en un contenedor de grilla, 
+lo que permite organizar sus elementos hijos en filas y columnas). 
+grid-template-columns
+grid-template-rows
+grid-template-areas
+column-gap
+row-gap
+
+ejemplo de todo esto usado en css:
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main .";
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: start;
+    justify-content: space-around;
+    align-content: space-between
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+/* estilos para dispositivos moviles: desarrollo responsive */
+
+/* Las media queries son una característica de CSS que permiten aplicar estilos específicos en función de las características del dispositivo, como el ancho y la altura de la pantalla. */
+
+/* ejemplo de media query */
+
+/* 
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+-Media query para tabletas 
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+-Media query para computadoras de escritorio 
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+*/
+
+
+
+
+/* Estilos para dispositivos móviles 
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+Media query para tabletas y computadoras de escritorio 
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+*/
+
+
+
+
+/* Estilos para dispositivos móviles 
+img {
+    width: 100%;
+    height: auto;
+}
+
+ Media query para computadoras de escritorio 
+@media (min-width: 1024px) {
+    img {
+        width: 50%;
+    }
+}
+
+*/
+
+
+
+
+/* mobile firts: implica diseñar primero para dispositivos móviles y luego adaptar el diseño para pantallas más grandes. Esto asegura que nuestra página sea accesible y funcional en los dispositivos más pequeños.*/
+
+
+/* ejemplo de media query */
+/* cambiamos el color de fondo de nuestra clase de acuerdo al tamaño de la pantalla */
+
+@media (max-width: 576px) {
+    .custom-style {
+        background-color: red;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .custom-style{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-style {
+        background-color: green;
+    }
+}
+
+
+
+/* Ejemplos Comunes de Pseudoclases:
+:hover: Se aplica cuando el usuario pasa el cursor sobre un elemento.
+
+:focus: Se aplica cuando un elemento, como un campo de formulario, recibe el foco.
+
+:nth-child(n): Selecciona el elemento n-ésimo de su tipo dentro de su padre.
+
+:first-child y :last-child: Seleccionan el primer y último hijo de un elemento padre. */
+
